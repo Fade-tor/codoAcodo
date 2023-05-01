@@ -44,6 +44,7 @@ function limpiar() {
     var nombre = document.getElementById('nombreModal').innerHTML;
     var apellido = document.getElementById('apellidoModal').innerHTML;
     var tema = document.getElementById('temaModal').innerHTML;
+    //Compruebo que no haya ni datos vacíos ni canpos con valor "sin dato".
     if ((nombre === "Sin Dato" || nombre === "") || (apellido === "Sin Dato" || apellido === "")|| (tema === "Sin Dato" || tema === "")) {
         alert('Hay información sin completar. Complete el formulario y vuelva a enviarlo.');
         return false;
